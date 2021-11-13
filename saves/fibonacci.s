@@ -1,0 +1,10 @@
+LIM R1, 0
+LIM R2, 1
+LOOPSRC .label
+LOOPCNT 7
+ADD R1, R1, R2
+PST R1, 0
+ADD R2, R1, R2
+.label
+PST R2, 0
+HLT
